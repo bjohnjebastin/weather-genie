@@ -11,6 +11,10 @@ const routes: Routes = [
     component: WeatherComponent
   },
   {
+    path: 'forecast',
+    component: WeatherComponent
+  },
+  {
     path: 'place',
     component: PlaceComponent
   },
