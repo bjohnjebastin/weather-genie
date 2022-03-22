@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 weather-container" *ngFor="let item of day">
+    <div class="date">
+      {{item.dt_txt | date: 'HH:mm'}}
+    </div>
+    <div>
+      <img src="http://openweathermap.org/img/w/{{item.weather[0].icon}}.png"> {{item.weather[0].main}}
+    </div>
+    <div class="temperature">
+      Current: {{item.main.temp - 273.15 | number: '1.2-2'}}&#176;C
+    </div>
+    <div class="temperature-max">
+      {{item.main.temp_max - 273.15 | number: '1.2-2'}}&#176;C
+    </div>
+    <div class="temperature-min">
+      {{item.main.temp_min - 273.15 | number: '1.2-2'}}&#176;C
+    </div>
+    <div>
+      {{item.wind.speed * 2.2369 | number: '1.2-2'}}mph
+    </div>
+  </div>
+</div>

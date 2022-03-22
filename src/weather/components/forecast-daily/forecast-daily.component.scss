@@ -1,0 +1,26 @@
+.weather-container {
+  background-color: lightskyblue;
+  color: white;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 10px;
+
+  .date {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .temperature {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .temperature-max {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .temperature-min {
+    font-size: 14px;
+  }
+}
